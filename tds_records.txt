@@ -1,0 +1,153 @@
+--- FORM 16 ---
+Payee Name    : notSomething some
+Payee PAN     : 70820505
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 150000.00 INR
+Annual Salary : 1800000.00 INR
+TDS Deducted  : 30000.00 INR
+Net Amount    : 120000.00 INR
+Payment Date  : 2024-12-11
+-------------------------
+--- FORM 16C ---
+Payee Name    : Something some
+Payee PAN     : 82957305
+Payment Type  : Rent
+Section       : 194I
+Gross Amount  : 65000.00 INR
+TDS Deducted  : 6500.00 INR
+Net Amount    : 58500.00 INR
+Payment Date  : 2025-02-05
+-------------------------
+--- FORM 16A ---
+Payee Name    : Something some
+Payee PAN     : 82957305
+Payment Type  : Professional
+Section       : 194J
+Gross Amount  : 130000.00 INR
+TDS Deducted  : 13000.00 INR
+Net Amount    : 117000.00 INR
+Payment Date  : 2024-06-08
+-------------------------
+--- FORM 16C ---
+Payee Name    : Something some
+Payee PAN     : 82957305
+Payment Type  : Rent
+Section       : 194I
+Gross Amount  : 75000.00 INR
+TDS Deducted  : 7500.00 INR
+Net Amount    : 67500.00 INR
+Payment Date  : 2025-08-09
+-------------------------
+--- FORM 16 ---
+Payee Name    : notSomething some
+Payee PAN     : 70820505
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 120000.00 INR
+Annual Salary : 1440000.00 INR
+TDS Deducted  : 36000.00 INR
+Net Amount    : 84000.00 INR
+Payment Date  : 2024-06-09
+-------------------------
+--- FORM 16 ---
+Payee Name    : notSomething some
+Payee PAN     : 70820505
+Payment       : Salary
+Section       : 192
+Monthly Salary: 150000.00 INR
+Annual Salary : 1800000.00 INR
+TDS Deducted  : 45000.00 INR
+Net Amount    : 105000.00 INR
+Payment Date  : 2024-25-08
+-------------------------
+--- FORM 16A ---
+Payee Name    : notSomething some
+Payee PAN     : 70820505
+Payment Type  : Contractor
+Section       : 194C
+Gross Amount  : 150000.00 INR
+TDS Deducted  : 3000.00 INR
+Net Amount    : 147000.00 INR
+Payment Date  : 2025-12-24
+-------------------------
+--- FORM 16 ---
+Payee Name    : Something some
+Payee PAN     : 82957305
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 130000.00 INR
+Annual Salary : 1560000.00 INR
+TDS Deducted  : 39000.00 INR
+Net Amount    : 91000.00 INR
+Payment Date  : 2024-08-07
+-------------------------
+--- FORM 16 ---
+Payee Name    : Someone Else
+Payee PAN     : 64764585
+Payee Category: Individual
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 80000.00 INR
+Annual Salary : 960000.00 INR
+TDS Deducted  : 16000.00 INR
+Net Amount    : 64000.00 INR
+Payment Date  : 2024-24-10
+-------------------------
+--- FORM 16A ---
+Payee Name    : Someone Else
+Payee PAN     : 64764585
+Payee Category: Individual
+Payment Type  : Professional
+Section       : 194J
+Gross Amount  : 58000.00 INR
+TDS Deducted  : 5800.00 INR
+Net Amount    : 52200.00 INR
+Payment Date  : 2025-26-09
+-------------------------
+--- FORM 16C ---
+Payee Name    : notSomething some
+Payee PAN     : 70820505
+Category      : Company
+Payment Type  : Rent
+Section       : 194IB
+Gross Amount  : 300000.00 INR
+TDS Deducted  : 15000.00 INR
+Net Amount    : 285000.00 INR
+Payment Date  : 2024-25-11
+-------------------------
+--- FORM 16C ---
+Payee Name    : Someone Else
+Payee PAN     : 64764585
+Category      : Individual
+Payment Type  : Rent
+Section       : 194IB
+Gross Amount  : 60000.00 INR
+TDS Deducted  : 3000.00 INR
+Net Amount    : 57000.00 INR
+Payment Date  : 2024-21-12
+-------------------------
+--- FORM 16 ---
+Payee Name    : Something some
+Payee PAN     : 82957305
+Category      : Individual
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 80000.00 INR
+Annual Salary : 960000.00 INR
+TDS Deducted  : 16000.00 INR
+Net Amount    : 64000.00 INR
+Payment Date  : 2024-11-12
+-------------------------
+--- FORM 16 ---
+Payee Name    : Someone Else
+Payee PAN     : 64764585
+Category      : Individual
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 70000.00 INR
+Annual Salary : 840000.00 INR
+TDS Deducted  : 14000.00 INR
+Net Amount    : 56000.00 INR
+Payment Date  : 2020-24-111
+-------------------------
