@@ -4,8 +4,79 @@
 #include <fstream>
 #include <iomanip>
 #include <sstream>
+#include <chrono>
+#include <thread>
 
+#ifdef _WIN32
+#include <windows.h>
+#ifndef ENABLE_VIRTUAL_TERMINAL_PROCESSING
+#define ENABLE_VIRTUAL_TERMINAL_PROCESSING 0x0004
+#endif
+#endif
 using namespace std;
+
+#define RESET         "\033[0m"
+#define BOLD          "\033[1m"
+#define BRIGHT_RED    "\033[91m"
+#define LIGHT_GREY    "\033[38;5;250m"
+#define BRIGHT_GREEN  "\033[92m"
+#define SKY_BLUE      "\033[38;5;39m"
+#define BRIGHT_WHITE  "\033[97m"
+#define CYAN          "\033[36m"
+#define BRIGHT_YELLOW "\033[38;5;226m"
+
+void enableANSIColors() {
+#ifdef _WIN32
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    DWORD dwMode = 0;
+    GetConsoleMode(hOut, &dwMode);
+    dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    SetConsoleMode(hOut, dwMode);
+#endif
+}
+
+void clearScreen() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+void sleepMillis(int millis) {
+    std::this_thread::sleep_for(std::chrono::milliseconds(millis));
+}
+
+void showLoadingScreen() {
+    enableANSIColors();
+    clearScreen();
+    cout << LIGHT_GREY <<"\n============================================================\n";
+    cout << SKY_BLUE <<"           INCOME TAX DEPARTMENT - GOVT. OF INDIA\n";
+    cout << LIGHT_GREY << "============================================================\n" << RESET;
+    cout << BRIGHT_RED << BOLD << "             TDS MANAGEMENT SYSTEM - FY 2024-25\n" << RESET;
+    cout << LIGHT_GREY << "------------------------------------------------------------\n" << RESET; 
+    cout << CYAN << BOLD << "   Developed by" << RESET << BRIGHT_WHITE << " : Rachit Prajapati\n";
+    cout << CYAN << BOLD << "   Mini Project" << RESET << BRIGHT_WHITE << " | B.Tech CSE - 2nd Sem | June 2025\n";
+    cout << CYAN << BOLD << "   Version" << RESET << BRIGHT_WHITE << "      : 1.0.0\n";
+
+    cout << LIGHT_GREY << "============================================================\n\n" << RESET;
+
+    cout << BRIGHT_YELLOW << "Initializing Project...\n\n";
+    cout << BRIGHT_YELLOW << "[";
+
+    const int totalSteps = 35;
+    for (int i = 0; i < totalSteps; ++i) {
+        cout << "=";
+        cout.flush();
+        sleepMillis(100);  // faster but smooth
+    }
+
+    cout << "] 100%\n\n" << RESET;
+    cout << BRIGHT_WHITE << " System initialized successfully. Launching interface...\n" << RESET;
+
+    sleepMillis(1800);
+    clearScreen();
+}
 
 enum class payeeCategory {
     Individual, Company
@@ -307,6 +378,8 @@ void manageRecords(vector<Payee>& payees, vector<Payer>& payers) {
 }
 
 int main() {
+    showLoadingScreen();
+    std::cout << BRIGHT_GREEN << ">> System Ready. Welcome to the Main Menu!" << RESET << std::endl;
     vector<Payee> payees = loadPayees();
     vector<Payer> payers = loadPayers();
     int choice;
