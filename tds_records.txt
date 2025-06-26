@@ -163,3 +163,15 @@ TDS Deducted  : 27000.00 INR
 Net Amount    : 63000.00 INR
 Payment Date  : 2025-09-08
 -------------------------
+--- FORM 16 ---
+Payee Name    : Something some
+Payee PAN     : 82957305
+Category      : Individual
+Payment Type  : Salary
+Section       : 192
+Monthly Salary: 80000.00 INR
+Annual Salary : 960000.00 INR
+TDS Deducted  : 16000.00 INR
+Net Amount    : 64000.00 INR
+Payment Date  : 2024-23-12
+-------------------------

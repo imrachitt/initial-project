@@ -55,10 +55,10 @@ void showLoadingScreen() {
     cout << LIGHT_GREY << "============================================================\n" << RESET;
     cout << BRIGHT_RED << BOLD << "             TDS MANAGEMENT SYSTEM - FY 2024-25\n" << RESET;
     cout << LIGHT_GREY << "------------------------------------------------------------\n" << RESET; 
-    cout << CYAN << BOLD << "   Developed by" << RESET << BRIGHT_WHITE << " : Rachit Prajapati\n";
     cout << CYAN << BOLD << "   Mini Project" << RESET << BRIGHT_WHITE << " | B.Tech CSE - 2nd Sem | June 2025\n";
+    cout << CYAN << BOLD << "   Developed by" << RESET << BRIGHT_WHITE << " : Rachit Prajapati\n";
+    cout << CYAN << BOLD << "   Mentored by" << RESET << BRIGHT_WHITE << "  : Prof.Sagar More\n";
     cout << CYAN << BOLD << "   Version" << RESET << BRIGHT_WHITE << "      : 1.0.0\n";
-
     cout << LIGHT_GREY << "============================================================\n\n" << RESET;
 
     cout << BRIGHT_YELLOW << "Initializing Project...\n\n";
@@ -68,13 +68,13 @@ void showLoadingScreen() {
     for (int i = 0; i < totalSteps; ++i) {
         cout << "=";
         cout.flush();
-        sleepMillis(100);  // faster but smooth
+        sleepMillis(600);  // faster but smooth
     }
 
     cout << "] 100%\n\n" << RESET;
     cout << BRIGHT_WHITE << " System initialized successfully. Launching interface...\n" << RESET;
 
-    sleepMillis(1800);
+    sleepMillis(4800);
     clearScreen();
 }
 
@@ -379,7 +379,8 @@ void manageRecords(vector<Payee>& payees, vector<Payer>& payers) {
 
 int main() {
     showLoadingScreen();
-    std::cout << BRIGHT_GREEN << ">> System Ready. Welcome to the Main Menu!" << RESET << std::endl;
+    cout << BRIGHT_WHITE << BOLD << ">> System Ready. Welcome to the Main Menu!" << RESET << endl;
+    cout << BRIGHT_WHITE;
     vector<Payee> payees = loadPayees();
     vector<Payer> payers = loadPayers();
     int choice;
